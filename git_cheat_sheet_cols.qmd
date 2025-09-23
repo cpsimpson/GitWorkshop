@@ -1,0 +1,73 @@
+---
+title: "Git Cheatsheet (Lab Edition)"
+format:
+  pdf:
+    papersize: letter
+    geometry: margin=0.5in
+    classoption: [twocolumn]     # ← two columns, no raw LaTeX needed
+    fontsize: 9pt
+    linestretch: 0.96
+    colorlinks: false
+    toc: false
+    number-sections: false
+    highlight-style: pygments
+    code-overflow: wrap
+    code-block-bg: false
+    code-block-border-left: false
+mainfont: Helvetica
+---
+
+<!-- Your cheatsheet content starts here; use normal Markdown headings and code fences -->
+
+
+# Git Cheatsheet (Lab Edition)
+
+## Setup
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+## Starting a Repo
+```bash
+git init
+git clone https://github.com/username/lab-practice-repo.git
+```
+
+## Recording Changes
+```bash
+git status
+git add FILE
+git add .
+git commit -m "Message"
+```
+
+## Sending & Receiving Changes
+```bash
+git remote add origin https://github.com/username/lab-practice-repo.git
+git push -u origin main
+git pull
+```
+
+## Branching
+```bash
+git branch new-feature
+git checkout new-feature
+git merge new-feature
+```
+
+## Pull Requests (GitHub)
+- Share your branch on GitHub
+- Open a PR to merge into `main`
+- Teammates review and discuss
+
+## Code Review Tips
+- Be specific, kind, constructive
+- Explain what & why; suggest how
+
+## Typical Workflow
+1. Pull latest
+2. Edit → `add` → `commit`
+3. Push
+4. Open PR; address feedback
+5. Merge

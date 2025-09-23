@@ -1,0 +1,419 @@
+---
+title: "Introduction to Git"
+author: "Caroline Simpson"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    transition: fade
+    incremental: false
+    controls: true
+    center: true
+    code-fold: false
+    toc: false
+    chalkboard: 
+      src: chalkboard.json
+    footer: "2025/09/23 | Git basics for research"
+
+execute: 
+  echo: true
+---
+
+# {background-image="images/title.png" background-size=contain background-position=center background-color=black data-menu-title="The adventures of Time Travelling Clones through Alternate Universes with Custom Save Points"} 
+
+## Goals for Today
+
+- Understand what Git is and why it matters for research
+- Learn the core concepts
+- Practice creating a repo and making commits
+- See how Git helps collaboration - Lab Manual!
+- Get resources for learning more
+
+![](images/science-cats.png){fig-align="right"}
+
+# Motivation
+
+## Why Should We Care?
+
+- Track drafts of papers, preregistrations, code, analyses
+- Recover from mistakes
+- Collaborate without overwriting each other
+- Open science: transparent workflows
+
+## Applying to Research
+
+- **Paper drafts**: versioned history of your work
+- **Analysis scripts**: recover working versions
+- **Stimuli lists**: track changes across pilots
+- **Collaboration**: no more “final_final_REALLY.docx”
+
+## But Doesn't OneDrive / Word already have version history?
+
+- yes, but ... 
+  - it's not great
+  - better than nothing
+  - *spoiler*: Git isn't great for Word docs either
+
+[Word Version History Demo](https://uofwaterloo-my.sharepoint.com/:w:/r/personal/cpsimpso_uwaterloo_ca/_layouts/15/Doc.aspx?sourcedoc=%7B52CFD4BB-BBDE-451E-8573-331E888F1589%7D&file=Abstract%20-%20LOVEConference.docx&action=default&mobileredirect=true)
+
+# Core Git Concepts
+
+## Repository
+
+- a.k.a., repo
+- really just a folder
+    - that supports time travel
+    - and alternate timelines
+    
+![](images/repo.png){fig-align="right"}
+
+## Commit
+
+- a snapshot in time
+- like a save point in a video game
+
+![](images/commit.png){fig-align="right"}
+
+## Branch
+
+- Parallel universe for your work
+- Safer than editing **main** directly
+   - **main** (sometimes master) is the name of the default branch 
+- Great for drafts, analyses, exploratory changes
+- Many different options for structuring your branches
+
+![](images/branch.png){fig-align="right"}
+
+## Merge
+
+- Combining of branches
+- Bringing changes from parallel universes back into the main one
+
+![](images/merge.png){fig-align="right"}
+
+
+## Remote
+
+- A copy of the repository somewhere else
+- Could be in the cloud (like on GitHub.com)
+- **origin** is commonly used for the main remote
+- You can have multiple remotes if you want
+
+![](images/remote.png){fig-align="right"}
+
+## Pull
+
+- Gets remote commits and applies them locally
+- Will get all commits since your last pull
+- Short cut for fetch (gets the commits) and merge (apply the commits)
+
+![](images/pull.png){fig-align="right"}
+
+## Advanced Tip: Rebasing {visibility="hidden"}
+
+- `git pull -r` = fetch + rebase
+- Replays your commits on top of new remote changes
+- Keeps history clean and linear
+- safe to skip until you’re comfortable
+
+## {visibility="hidden"}
+
+![](images/git-rebase-diagram.svg){width=900 height=400}
+
+## Push
+
+- Sends local commits to the remote
+
+![](images/push.png){fig-align="right"}
+
+## Clone
+
+- Create a copy of a remote repository locally
+
+![](images/clone.png){fig-align="right"}
+
+## Typical Workflow
+
+1. **Pull** from GitHub to make sure you’re up to date  
+2. Make local changes, then **Commit**  
+3. **Push** your changes back to GitHub  
+
+Best advice:
+**Commit early, commit often!**
+
+## Options for using
+
+- Web (ex. GitHub.com)
+- GUI (App like GitHub desktop)
+- Commandline 
+
+# GitHub
+
+## What is GitHub?
+
+- GitHub is a **website for hosting Git repositories**  
+- Lets you share your code and collaborate with others  
+- Provides tools for issues, pull requests, and code review  
+- Think of it as **OneDrive for code**, but with better version control
+- [GitHub.com](https://github.com) 
+
+## Alternatives to GitHub
+
+- GitLab (https://gitlab.com)
+- https://git.uwaterloo.ca/ (UWaterloo's GitLab instance)
+- Gitea (https://gitea.com)
+- Bitbucket (https://bitbucket.org/)
+- numerous others ... 
+
+# GitHub Desktop
+
+## Demo
+
+- Install GitHub Desktop
+- https://github.com/apps/desktop
+- Walk through Tutorial Project
+
+# Collaboration
+
+## Pull Requests
+
+- A **Pull Request (PR)** is how you share your changes on GitHub  
+- It asks: *“Can we merge my branch into the main branch?”*  
+- Useful for collaboration, discussion, and tracking changes
+
+## Why Pull Requests?
+
+- **Collaboration**: share your work with teammates  
+- **Review**: others can give feedback before merging  
+- **History**: PRs are recorded, so you can revisit decisions  
+- **Safe merging**: GitHub checks if everything is compatible
+
+## Code Review
+
+- **Goal**: make the work better, not criticize the person  
+- Look for:
+  - Clarity (is it understandable?)  
+  - Consistency (does it fit with the project?)  
+  - Correctness (does it do what it’s supposed to?)  
+
+## Giving Helpful Feedback
+
+- Be **specific**: say *what* could be improved and *why*  
+- Be **kind**: assume the best intentions  
+- Be **constructive**: suggest solutions, not just problems  
+- Example:  
+  - ❌ “This is confusing.”  
+  - ✅ “Could you add a comment to explain what this line does?”
+
+## Merging a Pull Request
+
+1. Team member reviews the changes  
+2. Feedback addressed (if needed)  
+3. Click **Merge** on GitHub  
+4. Branch can be deleted after merge  
+
+
+## Next Steps: Try Git in Your Work
+
+👉 Start small: pick **one project** you’re working on now, and put it in a Git repo. 
+
+👉 Contribute to the lab manual
+
+##
+
+Use Git to track your **class papers** or **thesis draft**.  
+
+  👉 One repo = one project folder.
+  
+  👉 Not great for Word documents. 
+
+##
+
+Version-control your **analysis scripts** (R, Python, SPSS syntax) and your **stimuli** across experiments.  
+  
+  👉 Never lose track of what changed between experiments.
+
+##
+
+Use Git for **collaborative manuscripts** or **shared code** with co-authors.  
+
+  👉 Branching makes it easy to try revisions without overwriting others.
+  
+  👉 Pull requests makes it easy to review changes and give asynchronous feedback.
+
+## 
+
+Keep lab-wide materials (e.g., consent forms, lab manuals) in Git.  
+
+  👉 Everyone sees history, no more “final_FINAL.docx”.
+  
+
+## Bonus: Creating a website on GitHub Pages
+
+- Jekyll static site generator (markdown -> html)
+- https://docs.github.com/en/pages/quickstart 
+
+
+## Wrap-Up
+
+- Git = memory + collaboration
+- Branches let you experiment
+- Commit early, commit often
+- Tools like GitHub Desktop make it easier
+
+
+## Resources
+
+- [Git for Poets](https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV&ab_channel=TheCodingTrain)
+- [GitHub Quickstart](https://docs.github.com/en/get-started/quickstart/hello-world)
+- [Installing Git](https://github.com/git-guides/install-git)
+- [Software Carpentry Git Tutorials](https://swcarpentry.github.io/git-novice/)
+- [GitHub Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet.pdf)
+
+
+## 
+
+All images in this presentation were generated by ChatGPT 5.
+
+![](images/cats-waving-2.png){fig-align="right"}
+
+# Commandline Git
+
+## Demo: Creating a Repo
+
+Commands you’ll type:
+
+```bash
+git init
+git add notes.txt
+git commit -m "first commit"
+git log
+```
+
+👉 This makes your folder into a repo and saves your first snapshot.
+
+
+## Hands-On: Editing & Committing
+
+1. Edit `paper_draft.txt`  
+2. Check status:
+   ```bash
+   git status
+   ```
+3. Stage and commit:
+   ```bash
+   git add paper_draft.txt
+   git commit -m "Add preregistration note"
+   ```
+
+## Branching
+
+Commands:
+
+```bash
+git checkout -b new-idea
+# edit and commit
+git checkout main
+git merge new-idea
+```
+
+## Merge Conflicts (Fun, Not Scary!)
+
+- Happen when two people change the same line
+- Git marks conflicts like this:
+
+```text
+<<<<<<< HEAD
+Your version
+=======
+Their version
+>>>>>>> branch-name
+```
+
+- Edit the file to keep what you want, then:
+
+```bash
+git add file.txt
+git commit
+```
+
+## Creating a Repository on GitHub
+
+1. Go to <https://github.com> and sign in (or create an account)  
+2. Click the green **New repository** button  
+3. Choose a name (e.g., `lab-practice-repo`)  
+4. Set it to **Public** or **Private**  
+5. Click **Create repository**
+
+## Linking Your Local Repo to GitHub
+
+- First, copy the repository’s GitHub URL  
+  - Example: `https://github.com/username/lab-practice-repo.git`  
+
+- In your local practice repo folder, run:  
+```bash
+git remote add origin https://github.com/username/lab-practice-repo.git
+```
+
+## Pushing Your Local Repo to GitHub
+
+1. Make sure your changes are committed locally:  
+
+```bash
+git add .
+git commit -m "First commit"
+```
+
+2. Push your work to GitHub:  
+
+```bash
+git push -u origin main
+```
+
+- Now your practice repo is online! 🎉
+
+## Pulling from an Existing Repo
+
+- Sometimes, you want to **get a copy of a project** that already exists on GitHub
+- This is called **cloning**  
+- Later, you may need to **pull** to get the latest updates
+
+## Cloning a Repo
+
+1. Find the repository on GitHub  
+2. Copy its URL (e.g., `https://github.com/username/lab-practice-repo.git`)  
+3. In your terminal, run:  
+
+```bash
+git clone https://github.com/username/lab-practice-repo.git
+```
+
+- This creates a **local copy** of the project on your computer
+
+## Making Changes Locally
+
+- Once cloned, you can:  
+  - Edit files  
+  - Stage and commit changes  
+- Example:  
+
+```bash
+git add .
+git commit -m "Update analysis notes"
+```
+
+## Pulling Updates
+
+- If someone else has pushed new changes to GitHub, you’ll need to update your local copy  
+
+```bash
+git pull
+```
+
+- This fetches and merges the newest changes from GitHub into your local repo  
+
+## Typical Workflow
+
+1. **Pull** from GitHub to make sure you’re up to date  
+2. Make local changes, then commit  
+3. **Push** your changes back to GitHub  
