@@ -251,6 +251,7 @@ Keep lab-wide materials (e.g., consent forms, lab manuals) in Git.
 ## Bonus: Creating a website on GitHub Pages
 
 - Jekyll static site generator (markdown -> html)
+- https://nicolas-van.github.io/easy-markdown-to-github-pages/ 
 - https://docs.github.com/en/pages/quickstart 
 
 
