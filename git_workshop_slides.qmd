@@ -3,6 +3,7 @@ title: "Introduction to Git"
 author: "Caroline Simpson"
 format:
   revealjs:
+    output-file: index.html
     theme: simple
     slide-number: true
     transition: fade
