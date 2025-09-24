@@ -470,8 +470,8 @@ Caroline Simpson
 <li>and alternate timelines</li>
 </ul></li>
 </ul>
-
-<img data-src="images/repo.png" class="quarto-figure quarto-figure-right r-stretch"></section>
+<p><a href="https://docs.github.com/en/repositories">Related GitHub Docs</a> <img data-src="images/repo.png" class="quarto-figure quarto-figure-right"></p>
+</section>
 <section id="commit" class="slide level2 center">
 <h2>Commit</h2>
 <ul>
@@ -498,6 +498,7 @@ Caroline Simpson
 <ul>
 <li>Combining of branches</li>
 <li>Bringing changes from parallel universes back into the main one</li>
+<li>You might run into <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts">Merge Conflicts</a></li>
 </ul>
 
 <img data-src="images/merge.png" class="quarto-figure quarto-figure-right r-stretch"></section>
@@ -520,8 +521,19 @@ Caroline Simpson
 </ul>
 
 <img data-src="images/pull.png" class="quarto-figure quarto-figure-right r-stretch"></section>
-
-
+<section id="advanced-tip-rebasing" class="slide level2 center">
+<h2>Advanced Tip: Rebasing</h2>
+<ul>
+<li><code>git pull -r</code> = fetch + rebase</li>
+<li>Replays your commits on top of new remote changes</li>
+<li>Keeps history clean and linear</li>
+<li>safe to skip until you’re comfortable</li>
+</ul>
+</section>
+<section id="section-1" class="slide level2 center">
+<h2></h2>
+<p><img data-src="images/git-rebase-diagram.svg" width="900" height="400"></p>
+</section>
 <section id="push" class="slide level2 center">
 <h2>Push</h2>
 <ul>
@@ -610,6 +622,7 @@ Caroline Simpson
 </li>
 <li>Useful for collaboration, discussion, and tracking changes</li>
 </ul>
+<p><a href="https://docs.github.com/en/pull-requests">Related GitHub Docs</a></p>
 </section>
 <section id="why-pull-requests" class="slide level2 center">
 <h2>Why Pull Requests?</h2>
@@ -666,6 +679,30 @@ Caroline Simpson
 </li>
 <li>Branch can be deleted after merge</li>
 </ol>
+</section>
+<section id="repository-visibility" class="slide level2 center">
+<h2>Repository Visibility</h2>
+<ul>
+<li>Public
+<ul>
+<li>Everyone can read</li>
+<li>You and any collaborators can write -Private</li>
+<li>You and any collaborators can read and write</li>
+</ul></li>
+<li>Additional granularity in permissions is possible</li>
+</ul>
+<p><a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility">Related Githb Docs</a></p>
+</section>
+<section id="tips" class="slide level2 center">
+<h2>Tips</h2>
+<ul>
+<li>don’t store secret info in Git (e.g., passwords, api keys, etc.)
+<ul>
+<li>use a password manager if possible</li>
+<li>if you accidentally commit a secret, there are ways to rewrite history</li>
+<li><a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">Removing secrets</a></li>
+</ul></li>
+</ul>
 </section>
 <section id="next-steps-try-git-in-your-work" class="slide level2 center">
 <h2>Next Steps: Try Git in Your Work</h2>

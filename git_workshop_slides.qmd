@@ -65,7 +65,8 @@ execute:
 - really just a folder
     - that supports time travel
     - and alternate timelines
-    
+
+[Related GitHub Docs](https://docs.github.com/en/repositories)
 ![](images/repo.png){fig-align="right"}
 
 ## Commit
@@ -89,9 +90,9 @@ execute:
 
 - Combining of branches
 - Bringing changes from parallel universes back into the main one
+- You might run into [Merge Conflicts](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts)
 
 ![](images/merge.png){fig-align="right"}
-
 
 ## Remote
 
@@ -110,14 +111,14 @@ execute:
 
 ![](images/pull.png){fig-align="right"}
 
-## Advanced Tip: Rebasing {visibility="hidden"}
+## Advanced Tip: Rebasing
 
 - `git pull -r` = fetch + rebase
 - Replays your commits on top of new remote changes
 - Keeps history clean and linear
 - safe to skip until you’re comfortable
 
-## {visibility="hidden"}
+##
 
 ![](images/git-rebase-diagram.svg){width=900 height=400}
 
@@ -182,6 +183,8 @@ Best advice:
 - It asks: *“Can we merge my branch into the main branch?”*  
 - Useful for collaboration, discussion, and tracking changes
 
+[Related GitHub Docs](https://docs.github.com/en/pull-requests)
+
 ## Why Pull Requests?
 
 - **Collaboration**: share your work with teammates  
@@ -212,6 +215,24 @@ Best advice:
 2. Feedback addressed (if needed)  
 3. Click **Merge** on GitHub  
 4. Branch can be deleted after merge  
+
+## Repository Visibility
+
+- Public
+   - Everyone can read
+   - You and any collaborators can write
+-Private
+   - You and any collaborators can read and write
+- Additional granularity in permissions is possible
+
+[Related Githb Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories#about-repository-visibility)
+  
+## Tips
+
+- don't store secret info in Git (e.g., passwords, api keys, etc.)
+   - use a password manager if possible
+   - if you accidentally commit a secret, there are ways to rewrite history
+   - [Removing secrets](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)
 
 
 ## Next Steps: Try Git in Your Work
