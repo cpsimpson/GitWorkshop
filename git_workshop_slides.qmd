@@ -26,7 +26,7 @@ execute:
 - Understand what Git is and why it matters for research
 - Learn the core concepts
 - Practice creating a repo and making commits
-- See how Git helps collaboration - Lab Manual!
+- See how Git helps collaboration!
 - Get resources for learning more
 
 ![](images/science-cats.png){fig-align="right"}
@@ -216,8 +216,6 @@ Best advice:
 ## Next Steps: Try Git in Your Work
 
 👉 Start small: pick **one project** you’re working on now, and put it in a Git repo. 
-
-👉 Contribute to the lab manual
 
 ##
 
